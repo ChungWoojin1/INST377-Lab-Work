@@ -17,7 +17,7 @@ async function mainEvent() { // the async skeyword means we can make API request
   let currentList = [];
   form.addEventListener('submit', async (submitEvent) => { // async has to be declared on every function that needs to "await" something
     submitEvent.preventDefault(); // This prevents your page from going to http://localhost:3000/api even if your form still has an action set on it
-    console.log('form submission'); // this is substituting for a "breakpoint"
+    //console.log('form submission'); // this is substituting for a "breakpoint"
 
     /*
       ## GET requests and Javascript
@@ -68,7 +68,7 @@ async function mainEvent() { // the async skeyword means we can make API request
   });
 
   filterButton.addEventListener('click', (event) => {
-    console.log('clicked filterButton');
+    console.log('clicked filter Button');
 
     const formData = new FormData(form);
     const formProps = Object.fromEntries(formData);
